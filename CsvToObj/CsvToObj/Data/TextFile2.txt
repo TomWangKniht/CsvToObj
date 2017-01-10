@@ -1,0 +1,4 @@
+﻿1,你,Sunday,看戲
+2,我,Monday,看電影
+3,他,Tuesday,爬山
+4,她,Wednesday,見鬼了
