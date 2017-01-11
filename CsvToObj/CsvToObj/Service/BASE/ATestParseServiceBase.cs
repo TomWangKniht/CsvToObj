@@ -15,7 +15,7 @@ namespace CsvToObj.Service.BASE
         public void process(String fileName)
         {
             var service = getNewParseService();
-            var lines = File.ReadAllLines(Properties.Settings.Default.Path + fileName);
+            var lines = File.ReadAllLines(Path.Combine(Properties.Settings.Default.Path, fileName));
             String msg;
             var result = service.process(lines, out msg);
             Console.WriteLine("執行結果:" + msg);
