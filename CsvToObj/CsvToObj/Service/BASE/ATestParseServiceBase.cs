@@ -18,7 +18,7 @@ namespace CsvToObj.Service.BASE
             var lines = File.ReadAllLines(Path.Combine(Properties.Settings.Default.Path, fileName));
             String msg;
             var result = service.process(lines, out msg);
-            Console.WriteLine("執行結果:" + msg);
+            Console.WriteLine($"執行結果:{msg}");
             if (result != null&&result.Count()>0)
             {
                 Console.WriteLine("轉換結果如下:");
